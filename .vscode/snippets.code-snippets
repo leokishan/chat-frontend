@@ -1,0 +1,18 @@
+{
+  "hksc": {
+      "prefix": "hkdc",
+      "scope": "javascript,javascriptreact",
+      "body": [
+				"import React from 'react'",
+				"const ${TM_FILENAME/(.*)\\..+$/$1/} = (props) => {",
+				"\treturn(",
+				"\t\t<React.Fragment>",
+				"\t\t\t$0",
+				"\t\t</React.Fragment>",
+				"\t)",
+				"}",
+				"export default ${TM_FILENAME/(.*)\\..+$/$1/}"
+      ],
+      "description": "Hooked Component"
+  }
+}

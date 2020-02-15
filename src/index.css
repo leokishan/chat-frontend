@@ -1,0 +1,32 @@
+.textBody {
+	color: red;
+}
+.row {
+	margin: 0px !important;
+}
+.col {
+	padding: 0px !important;
+}
+body {
+	margin: 0px;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	width: 6px;
+	background: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, .7);
+}
+
+::-webkit-scrollbar-track {
+	width: 6px;
+	background: transparent;
+}

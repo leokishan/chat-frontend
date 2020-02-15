@@ -1,0 +1,97 @@
+for num in range(0px, 100px)
+  .pa-top-{num}px
+    padding-top: num
+  .pa-start-{num}px
+    padding-left: num
+  .pa-end-{num}px
+    padding-right: num
+  .pa-{num}px
+    padding: num
+  .ma-{num}px
+      margin: num
+  .ma-start-{num}px
+    margin-left: num
+  .ma-top-{num}px
+    margin-top: num
+  .ma-end-{num}px
+    margin-right: num
+  .ma-bottom-{num}px
+    margin-bottom: num
+  .pa-bottom-{num}px
+    padding-bottom: num
+  .mlr-{num}px 
+    margin-left: num !important
+    margin-right: num !important
+  .plr-{num}px 
+    padding-left: num !important
+    padding-right: num !important
+  .mtb-{num}px 
+    margin-top: num !important
+    margin-bottom: num !important
+  .ptb-{num}px 
+    padding-top: num !important
+    padding-bottom: num !important
+
+for num in range(10px,50px, 2)
+  .f-size-{num}px
+    font-size: num px
+
+for num in range(0,100, 5)
+  .height-{num}vh
+    height: num vh
+
+$align := {
+  c-start : start
+  c-left: left
+  c-right: right
+  c-end: end
+  c-center: center
+}
+
+for classname, align-side in $align
+  .{classname}
+    text-align: align-side
+
+$theme := {
+  grey: #B3BCBA
+  pure-black: #000000
+  white: #f3f3f3
+  brown : #3f3434
+  darkGrey : #495960
+  wood : rgba(203,135,95,0.3)
+  darkBlue : #4528ff
+  greenBlue : #00cef4
+}
+
+for classname, color in $theme
+  .{classname}
+    background: color
+    background-color: color !important
+  .{classname}--text
+    color: color !important
+
+.clickable
+  cursor : pointer
+
+.display-flex
+  display : flex
+
+.display-block
+  display : block
+
+.display-none
+  display : none
+
+input
+  &:focus
+    box-shadow none !important
+
+.fade-enter
+  opacity 0
+
+.fade-enter-active
+  opacity 1
+  transition all 3000ms
+
+.img-bg
+  background-image url(../static/images/greyBg.png)
